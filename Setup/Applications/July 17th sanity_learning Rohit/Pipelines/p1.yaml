@@ -3,7 +3,7 @@ type: PIPELINE
 pipelineStages:
 - type: APPROVAL
   name: Approval 0
-  parallel: false
+  parallel: true
   properties:
     userGroups:
     - C7zumEERS86T0g0-rj-dnA
@@ -11,7 +11,7 @@ pipelineStages:
     approvalStateType: USER_GROUP
 - type: ENV_STATE
   name: template
-  parallel: false
+  parallel: true
   workflowName: workflow for docker image
   workflowVariables:
   - entityType: INFRASTRUCTURE_MAPPING
