@@ -1,0 +1,25 @@
+harnessApiVersion: '1.0'
+type: PIPELINE
+pipelineStages:
+- type: APPROVAL
+  name: Approval 0
+  parallel: false
+  properties:
+    userGroups:
+    - C7zumEERS86T0g0-rj-dnA
+    timeoutMillis: 604800000
+    approvalStateType: USER_GROUP
+- type: ENV_STATE
+  name: template
+  parallel: false
+  workflowName: workflow for docker image
+  workflowVariables:
+  - entityType: INFRASTRUCTURE_MAPPING
+    name: ServiceInfra_Kubernetes
+    value: Kubernetes Cluster_ qa-target_DIRECT_Kubernetes_default
+  - entityType: ENVIRONMENT
+    name: Environment
+    value: prod
+  - entityType: SERVICE
+    name: Service
+    value: docker_service
