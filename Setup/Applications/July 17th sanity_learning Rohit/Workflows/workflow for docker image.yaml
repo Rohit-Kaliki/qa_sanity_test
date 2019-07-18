@@ -35,6 +35,23 @@ phases:
       templateUri: Harness.io/Greeter:latest
     - type: COMMAND
       name: RohitSSHInstall
+      properties:
+        templateUuid: -VxQ8to9ShqTnlEUX74OVQ
+        connectionAttributes: null
+        sshKeyRef: null
+        connectionType: null
+        executeOnDelegate: true
+        templateVariables:
+        - name: Id
+          mandatory: false
+          value: '007'
+          fixed: false
+          metadata: null
+          type: TEXT
+        commandName: RohitSSHInstall
+        host: null
+        timeoutMillis: 60000
+        templateVersion: latest
       templateUri: Harness.io/RohitSSHInstall:latest
       templateVariables:
       - name: Id
