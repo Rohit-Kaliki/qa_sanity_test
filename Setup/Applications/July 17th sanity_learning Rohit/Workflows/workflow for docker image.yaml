@@ -31,9 +31,6 @@ phases:
         replicationControllerName: ${app.name}-${service.name}-${env.name}
         resizeStrategy: RESIZE_NEW_FIRST
     - type: COMMAND
-      name: Greeter
-      templateUri: Harness.io/Greeter:latest
-    - type: COMMAND
       name: RohitSSHInstall
       properties:
         templateUuid: -VxQ8to9ShqTnlEUX74OVQ
@@ -56,6 +53,9 @@ phases:
       templateVariables:
       - name: Id
         value: '007'
+    - type: COMMAND
+      name: Greeter
+      templateUri: Harness.io/Greeter:latest
     stepsInParallel: false
   - type: CONTAINER_DEPLOY
     name: Deploy Containers
