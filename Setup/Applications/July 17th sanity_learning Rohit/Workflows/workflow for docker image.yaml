@@ -30,6 +30,9 @@ phases:
       properties:
         replicationControllerName: ${app.name}-${service.name}-${env.name}
         resizeStrategy: RESIZE_NEW_FIRST
+    - type: COMMAND
+      name: Greeter
+      templateUri: Harness.io/Greeter:latest
     stepsInParallel: false
   - type: CONTAINER_DEPLOY
     name: Deploy Containers
