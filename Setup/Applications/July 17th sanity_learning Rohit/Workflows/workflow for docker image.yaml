@@ -33,6 +33,12 @@ phases:
     - type: COMMAND
       name: Greeter
       templateUri: Harness.io/Greeter:latest
+    - type: COMMAND
+      name: RohitSSHInstall
+      templateUri: Harness.io/RohitSSHInstall:latest
+      templateVariables:
+      - name: Id
+        value: '007'
     stepsInParallel: false
   - type: CONTAINER_DEPLOY
     name: Deploy Containers
