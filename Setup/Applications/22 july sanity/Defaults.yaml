@@ -4,7 +4,7 @@ defaults:
 - name: BACKUP_PATH
   value: $HOME/${app.name}/${service.name}/${env.name}/backup/${timestampId}
 - name: RUNTIME_PATH
-  value: $HOME/${app.name}/${service.name}/${env.name}/runtim
+  value: $HOME/${app.name}/${service.name}/${env.name}/runtime
 - name: STAGING_PATH
   value: $HOME/${app.name}/${service.name}/${env.name}/staging/${timestampId}
 - name: WINDOWS_RUNTIME_PATH
