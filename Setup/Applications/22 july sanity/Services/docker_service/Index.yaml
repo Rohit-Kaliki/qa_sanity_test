@@ -1,0 +1,11 @@
+harnessApiVersion: '1.0'
+type: SERVICE
+artifactType: DOCKER
+configVariables:
+- name: var2
+  value: amazonkms:RCI2mnLDQey8vhXG8yLX2Q
+  valueType: ENCRYPTED_TEXT
+- name: var1
+  value: '20'
+  valueType: TEXT
+deploymentType: KUBERNETES
