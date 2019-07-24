@@ -9,3 +9,17 @@ pipelineStages:
     - yVKw21tkToubFsx2vInFSA
     timeoutMillis: 604800000
     approvalStateType: USER_GROUP
+- type: ENV_STATE
+  name: deploy_workflow
+  parallel: false
+  workflowName: workflow for docker image
+  workflowVariables:
+  - entityType: INFRASTRUCTURE_MAPPING
+    name: ServiceInfra_Kubernetes
+    value: Kubernetes Cluster_ qa-target_DIRECT_Kubernetes_default
+  - entityType: ENVIRONMENT
+    name: Environment
+    value: prod
+  - entityType: SERVICE
+    name: Service
+    value: dockder_service
