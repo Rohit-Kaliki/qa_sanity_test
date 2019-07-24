@@ -6,7 +6,7 @@ pipelineStages:
   parallel: false
   properties:
     userGroups:
-    - yVKw21tkToubFsx2vInFSA
+    - OGP2bnvASa-D8oua0YdmhQ
     timeoutMillis: 604800000
     approvalStateType: USER_GROUP
 - type: ENV_STATE
