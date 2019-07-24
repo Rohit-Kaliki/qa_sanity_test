@@ -36,6 +36,13 @@ phases:
     steps:
     - type: KUBERNETES_DEPLOY
       name: Upgrade Containers
+      properties:
+        templateUuid: null
+        commandName: Resize Replication Controller
+        instanceUnitType: PERCENTAGE
+        instanceCount: '100'
+        templateVersion: null
+        templateVariables: null
     stepsInParallel: false
   - type: VERIFY_SERVICE
     name: Verify Service
